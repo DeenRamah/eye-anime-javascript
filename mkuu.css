@@ -1,0 +1,250 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background: #edf8ff;
+}
+
+.shonde
+{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    margin: 40px;
+    box-shadow: 20px 20px 12px rgb(204, 198, 198);
+}
+.haga
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fb6971;
+    width: 320px;
+    height: 180px;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    overflow: hidden;
+
+}
+.shonde:nth-child(2) .haga
+{
+    background: rgb(205, 205, 80);
+}
+.haga::before
+{
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 97.7px;
+    width: 20px;
+    background: #fff;
+    z-index: 2;
+    height: 20px;
+    border-radius: 50%;
+}
+.haga::after
+{
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 97.7px;
+    width: 20px;
+    background: #fff;
+    z-index: 1;
+    height: 20px;
+    border-radius: 50%;
+
+}
+.haga span
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 100px;
+    background: #6192a1;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.haga span::after
+{
+    content: '';
+    position: absolute;
+    background: #6192a1;
+    right: 10px;
+    width: 30px;
+    height: 100px;
+    top: -90px;
+    transform: rotate(15deg);
+}
+.haga span::before
+{
+    content: '';
+    position: absolute;
+    background: #6192a1;
+    left: 10px;
+    width: 30px;
+    height: 100px;
+    top: -90px;
+    transform: rotate(345deg);
+}
+
+.shingo
+{
+    position: absolute;
+    bottom: 138px;
+    left: 41%;
+    transform: translateX(-50);
+    width: 70px;
+    height: 100px;
+    background: #ffcfcc;
+    z-index: 10;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+.shingo::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background: linear-gradient(rgba(0,0,0,0.1),trasparent);
+}
+.sura
+{
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 160px;
+    height: 190px;
+    background: #ffcfcc;
+    border-top-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border-radius: 45%;
+    z-index: 12;
+}
+.macho
+{
+    position: absolute;
+    top: 57px;
+    left: 50%;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    transform: translateX(-50%);
+    justify-content: space-between;
+}
+.macho .jicho
+{
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+.macho .jicho::before
+{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 -5px 0 #111;
+
+}
+
+.macho .jicho i
+{
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background: rgb(249, 249, 249);
+    border-radius: 50%;
+}
+
+.macho .jicho i::before
+{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #111;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #3d5d89;
+    transform: translate(-10px,2px);
+
+}
+
+.mdomo
+{
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(50%);
+    right: 50%;
+    width: 60px;
+    height: 30px;
+    background: #ff4e57;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: inset 0 10px 6px rgb(73, 67, 67);
+    transition: 0.4s;
+}
+.sura:hover .mdomo
+{
+    height: 15px;
+    width: 70px;
+    bottom: 40px;
+    border-radius: 10px;
+}
+.sura:hover{
+    cursor: pointer;
+}
+.nywele
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    width: 230px;
+    height: 450px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+.shonde:nth-child(2) .nywele
+{
+    bottom: 190px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.shonde:nth-child(2) .haga span,
+.shingo:nth-child(2) .haga span::before,
+.shingo:nth-child(2) .haga::after
+{
+    background: rgb(184, 14, 199);
+}

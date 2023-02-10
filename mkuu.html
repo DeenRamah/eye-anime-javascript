@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sura&&na_s_mkuu</title>
+    <link rel="stylesheet" type="text/css" href="mkuu.css">
+</head>
+<body>
+    <div class="stivo" id="stivo">
+    <div class="shonde" id="shonde">
+        <div class="nywele" id="nywele"></div>
+        <div class="haga" id="haga">
+            <span></span>
+        </div>
+        <div class="kichwa" id="kichwa">
+            <div class="shingo" id shingo></div>
+            <div class="sura" id="sura">
+                <div class="macho" id="macho">
+                    <span class="jicho" id="jicho"><i></i></span>
+                    <span class="jicho" id="jicho"><i></i></span>
+                </div>
+                <div class="mdomo" id="mdomo"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shonde" id="shonde">
+        <div class="nywele" id="nywele"></div>
+        <div class="haga" id="nywele">
+            <span></span>
+        </div>
+        <div class="kichwa" id="kichwa">
+            <div class="shingo" id="shingo"></div>
+            <div class="sura" id="sura">
+                <div class="macho" id="macho">
+                    <span class="jicho" id="jicho"><i></i></span>
+                    <span class="jicho" id="jicho"><i></i></span>
+                </div>
+                <div class="mdomo" id="mdomo"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        document.querySelector('body').addEventListener('mousemove', eyeball);
+        function eyeball(){
+           let jicho = document.querySelectorAll('.jicho i');
+           jicho.forEach(function(jicho){
+            let x = (jicho.getBoundingClientRect().left) + (jicho.clientWidth /2);
+            let y = (jicho.getBoundingClientRect().top) + (jicho.clientHeight /2);
+            let radian = Math.atan2(event.pageX - x, event.pageY -y);
+            let rot = (radian * (180 /Math.PI) * -1);
+            jicho.style.transform = "rotate("+ rot +"deg)";
+
+    })
+}
+    </script> 
+    <script src="mkuu.js"></script>
+</body>
+</html>
